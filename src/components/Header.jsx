@@ -1,4 +1,5 @@
 import React from 'react'
+import cv_wisarut from '../assets/download/CV_WISARUT.pdf'
 
 function Header() {
   const menuFunction = () => {
@@ -21,18 +22,20 @@ function Header() {
             <a className='nav-link active-link' href="#home">Home</a>
           </li>
           <li className='nav_list'>
-            <a className='nav-link' href="">About</a>
+            <a className='nav-link' href="#about">About</a>
           </li>
           <li className='nav_list'>
-            <a className='nav-link' href="">Project</a>
+            <a className='nav-link' href="#projects">Project</a>
           </li>
           <li className='nav_list'>
-            <a className='nav-link' href="">Contract</a>
+            <a className='nav-link' href="#contact">Contact</a>
           </li>
         </ul>
       </div>
       <div className="nav-button">
-        <button className='btn'>Download CV <i className='uil uil-import'></i></button>
+        <a href={cv_wisarut} target='_blank'>
+          <button className='btn'>Download CV <i className='uil uil-import'></i></button>
+        </a>
       </div>
       <div className="nav-menu-btn">
         <i className='uil uil-bars' onClick={menuFunction}></i>
